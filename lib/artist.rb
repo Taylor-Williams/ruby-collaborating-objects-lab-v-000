@@ -22,7 +22,7 @@ class Artist
     else
       artist = Artist.new(name)
     end
-    artist
+    artist.save
   end
 
   def self.all
