@@ -7,6 +7,7 @@ class MP3Importer
 
   def files
     files = Dir.glob("#{path}/*.mp3")
+    files.map { |file| file = file.split("#{path}/")[1] }
   end
 
   def import
