@@ -1,5 +1,3 @@
-require "pry"
-
 class MP3Importer
   attr_accessor :path
 
@@ -10,6 +8,7 @@ class MP3Importer
   def files
     Dir.chdir(path)
     Dir.glob("*.mp3")
+    files = Dir.glob("*.mp3")
   end
 
   def import
